@@ -1,0 +1,8 @@
+doctype 5
+html
+  head
+    title= title
+  body
+    - each person in people
+      h1= person.name
+      p= person.email
