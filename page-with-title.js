@@ -5,16 +5,16 @@ var swig = require("swig");
 var dataset = {"title": "This is a page title"};
 
 exports.compare = {
-  "ejs" : function () {
-    ejs.render("views/page-with-title/index.ejs", dataset);
+  "ejs": function() {
+    ejs.render("views/basic-title/index.ejs", dataset);
   },
 
-  "jade" : function () {
-    jade.renderFile("views/page-with-title/index.jade", dataset);
+  "jade": function() {
+    jade.renderFile("views/basic-title/index.jade", dataset);
   },
 
-  "swig" : function () {
-    swig.renderFile("views/page-with-title/index.swig", dataset);
+  "swig": function() {
+    swig.renderFile("views/basic-title/index.swig", dataset);
   }
 };
 
